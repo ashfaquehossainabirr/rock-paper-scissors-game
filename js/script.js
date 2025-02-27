@@ -31,7 +31,11 @@ buttons.forEach((button) => {
                                 <br/>
                                 <b>Computer Score:</b> ${computerScore}
                             </p>
-                            <p class="text-green-600 font-bold text-2xl">You Won!</p>`
+                            <p class="text-green-600 font-bold text-2xl">You Won!</p>
+                            <button onclick="reloadFunc()" class="btn py-2 px-4 bg-slate-950 
+                                text-white shadow-lg font-bold rounded-md active:bg-slate-950">
+                                Restart Game
+                            </button>`
         } else if(computerScore >= 5) {
             main.innerHTML = `<h1 class="font-bold text-4xl mb-3">Game Over!</h1>
                             <p class="text-2xl mb-3">
@@ -39,7 +43,11 @@ buttons.forEach((button) => {
                                 <br/>
                                 <b>Computer Score:</b> ${computerScore}
                             </p>
-                            <p class="text-red-600 font-bold text-2xl">Computer Won!</p>`
+                            <p class="text-red-600 font-bold text-2xl">Computer Won!</p>
+                            <button onclick="reloadFunc()" class="btn py-2 px-4 bg-slate-950 
+                                text-white shadow-lg font-bold rounded-md active:bg-slate-950">
+                                Restart Game
+                            </button>`
         }
     })
 })
@@ -58,4 +66,8 @@ function operation(userChoice, computerChoice) {
         computerScore++
         return "Computer won"
     }
+}
+
+function reloadFunc() {
+    location.reload()
 }
