@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body class="flex justify-center items-center h-dvh">
-    <div class="main w-[700px] p-5 bg-slate-300 rounded-lg shadow-lg text-center">
+    <div class="main w-[700px] p-5 bg-white rounded-lg shadow-lg text-center
+    before:absolute before:content-[''] before:top-0 before:left-0 before:w-full before:h-dvh 
+    before:bg-black before:opacity-40 before:z-[-1]">
 
         <h1 class="font-bold text-4xl">Rock, Paper, Scissors Game</h1>
         
@@ -35,7 +37,8 @@
             <b>Score:</b> You ➡ <b>0</b> - <b>0</b> ⬅ computer
         </p>
 
-        <p class="result bg-sky-700 text-white py-1 px-2 rounded-md">
+        <p class="result bg-orange-600 text-white border border-slate-100 font-semibold py-2 px-4 
+        shadow-2xl rounded-md z-[9999]">
             Click any button to start the game
         </p>
 
