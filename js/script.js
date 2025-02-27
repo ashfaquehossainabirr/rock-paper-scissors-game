@@ -31,7 +31,7 @@ buttons.forEach((button) => {
                                 <br/>
                                 <b>Computer Score:</b> ${computerScore}
                             </p>
-                            <p class="text-green-600 font-bold text-2xl">You Won!</p>
+                            <p class="text-green-600 font-bold text-2xl mb-3">You Won!</p>
                             <button onclick="reloadFunc()" class="btn py-2 px-4 bg-slate-950 
                                 text-white shadow-lg font-bold rounded-md active:bg-slate-950">
                                 Restart Game
@@ -43,7 +43,7 @@ buttons.forEach((button) => {
                                 <br/>
                                 <b>Computer Score:</b> ${computerScore}
                             </p>
-                            <p class="text-red-600 font-bold text-2xl">Computer Won!</p>
+                            <p class="text-red-600 font-bold text-2xl mb-3">Computer Won!</p>
                             <button onclick="reloadFunc()" class="btn py-2 px-4 bg-slate-950 
                                 text-white shadow-lg font-bold rounded-md active:bg-slate-950">
                                 Restart Game
